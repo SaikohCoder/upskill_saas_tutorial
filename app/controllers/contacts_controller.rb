@@ -27,7 +27,7 @@ class ContactsController < ApplicationController
       # If Contact object doesn't save
       # store errors in flash hash,
       # and redirect to the new action
-      flash[:danger] = @contact.errors.full_messages.join(", ")
+      flash[:danger] = @contact.errors.full_messages.join(". ")
       redirect_to new_contact_path
     end
   end

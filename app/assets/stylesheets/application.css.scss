@@ -20,16 +20,17 @@
 @import 'font-awesome';
 
 ///// Background Gradient
-.navbar, .home-callout {
-  // Gradient provided by uiGradients.com
-  background: #00d2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar, .home-callout, .bg-gradient {
+  /// Gradient provided by uiGradients.com
+  background: #0099F7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /////  Nav Styles
 .navbar {
   border: none;
+  font-weight: bold;
 }
 .navbar-brand {
   font-family: 'Open Sans', sans-serif;
@@ -53,6 +54,10 @@
   }
 }
 
+a.btn.btn-default.navbar-btn {
+  margin-left: 15px;
+}
+
 ////// Homepage Styles
 .home-callout {
   color: white;
@@ -64,6 +69,12 @@
 .flash-container {
   position: absolute;
   width: 100%;
+}
+
+.well {
+  background-color: #434545;
+  color: white;
+  border-radius: 15px;
 }
 
 .alert-notice, 
@@ -82,4 +93,11 @@
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
+
+.white-bold {
+  color: white;
+  font-weight: bold;
+}
+
+
 

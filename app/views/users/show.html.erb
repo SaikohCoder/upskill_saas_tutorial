@@ -3,7 +3,7 @@
     <div class="col-md-3 text-center">
       <%= image_tag @user.profile.avatar.url, class: 'avatar-show-img' %>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 text-center">
       <h1><%= @user.profile.first_name %>
       <%= @user.profile.last_name %></h1>
       <h3><span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %><br></h3>
@@ -14,8 +14,8 @@
       <% if current_user.plan_id == 2 %>
         <div class="well profile-block profile-contact-info">
           <h3>Contact Information</h3>
-          <%= @user.profile.phone_number %><br>
-          <%= @user.profile.contact_email %><br>
+          <p>Phone: <%= @user.profile.phone_number %></p>
+          <p>Email: <%= @user.profile.contact_email %></p>
         </div>
       <% end %>
     </div>

@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   end
   # get 'about', to: 'pages#about'
   resources :contacts, only: :create
-  get 'contact-us', to: 'contacts#new', as: 'new_contact'
+  get 'contact', to: 'contacts#new', as: 'new_contact'
 end

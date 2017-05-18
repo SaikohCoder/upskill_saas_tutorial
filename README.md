@@ -1,3 +1,3 @@
 # README
 
-[Upskill](http://upskillcourses.com) Software-as-a-Service Ruby on Rails App
+[Capital Guaranty](http://capitalguaranty.com) An exclusive website for investors and entrepreneurs to collaborate and work together.

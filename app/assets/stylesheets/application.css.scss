@@ -18,13 +18,25 @@
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:700');
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 
 ///// Background Gradient
-.navbar, .home-callout, .bg-gradient {
-  /// Gradient provided by uiGradients.com
-  background: #0099F7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #0099F7 , #F11712); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #0099F7 , #F11712); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.navbar, .bg-gradient {
+  background-image: url('home-bkg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+body {
+  font-family: 'Michroma',sans-serif;
 }
 
 /////  Nav Styles
@@ -33,8 +45,10 @@
   font-weight: bold;
 }
 .navbar-brand {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-family: 'Michroma', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  display: block;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
@@ -50,12 +64,14 @@
 .navbar-default .navbar-toggle {
   border: 2px solid white;
   &:hover, &:focus {
-    background-color: #00c6ff;
+    background-color: #1a1a1a;
   }
 }
 
 a.btn.btn-default.navbar-btn {
   margin-left: 15px;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 ////// Homepage Styles
@@ -66,15 +82,29 @@ a.btn.btn-default.navbar-btn {
   padding-bottom: 100px;
 }
 
+.justify-content-center {
+  
+}
+
 .flash-container {
   position: absolute;
   width: 100%;
 }
 
 .well {
-  background-color: #434545;
+  font-family: 'Michroma',sans-serif;
+  font-weight: 700;
+  margin: 0 0 25px;
+  padding: 15px;
+  background-color: #1a1a1a;
   color: white;
-  border-radius: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+.col-centered{
+   padding-bottom: 25px;
 }
 
 .alert-notice, 
@@ -91,7 +121,8 @@ a.btn.btn-default.navbar-btn {
 
 ///// Typography Styles
 h1, h2, h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Michroma', sans-serif;
+  color: white;
 }
 
 .white-bold {
@@ -99,5 +130,34 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+///// Buttons
 
+.btn.btn-lg.btn-primary.black-btn {
+  background-color: #444;
+  font-family: 'Michroma',sans-serif;
+  font-weight: 500;
+  color: white;
+  border-color: black;
+  &:hover, &:focus {
+    background-color: #333;
+  }
+}
 
+.btn.btn-primary.black-btn {
+  background-color: #444;
+  font-family: 'Michroma',sans-serif;
+  font-weight: 500;
+  color: white;
+  border-color: black;
+  &:hover, &:focus {
+    background-color: #333;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

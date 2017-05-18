@@ -11,4 +11,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
+  def devise_mapping
+    @devise_mapping ||= request.env["devise.mapping"]
+  end
+  
 end
